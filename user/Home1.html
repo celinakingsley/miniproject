@@ -1,0 +1,109 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="sidenav.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="drop.css">
+<link rel="stylesheet" type="text/css" href="bgcolor.css">
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+
+ <div class="navbar ">
+  <a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+  <!-- <img src="cat.jpg" width="40" height="40" class="rounded-circle"> -->
+<script>
+function openNav()
+{
+document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav()
+{
+document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn"><img src="cat.jpg" width="50" height="50" style="border-radius: 50%"></button>
+  <div class="dropdown-content">
+  <a href="#"><i class="fas fa-signature"></i>NAME</a>
+  <a href="#"<i class="far fa-id-badge"></i>ID </a>
+  <a href="#"><i class="fas fa-map-marker-alt"></i>LOCATION</a>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav ">
+
+ <ul>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <li><a  href="#"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li> 
+  <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> </li>
+  <li><a href="#"><i class="fas fa-cogs"></i>Settings</a> </li>
+  <li><a href="#"><i class="fad fa-bells"></i> Notifications</a></li>
+  <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+</ul>
+</div>
+<div>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-left:300px;
+  margin-top:100px;
+}
+</style>
+<body>
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+
+
+ 
+</body>
+</html> 

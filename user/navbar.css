@@ -1,0 +1,42 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  overflow: visible;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+margin-top:0px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color:#f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/*.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+
+.navbar img{
+ 
+ border-radius: 50%;
+ margin-top: 20px;
+ margin-bottom: 0px;
+  margin-left:1100px;
+}
